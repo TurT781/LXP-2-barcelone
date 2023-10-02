@@ -4,7 +4,7 @@ projet de groupe LXP N2
 Blue symbolizes confidence, responsibility, freshness but also health for the environement. It is the favorite color of consumers.
 White symbolizes balance, neutral and calm. For a web app it is a smooth color for eyes.
 
-##  Brand preseation :
+##  Brand presention :
 Our brand name is "Readhub",
 
 ## Why this project and not another one ?
