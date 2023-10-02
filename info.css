@@ -1,0 +1,94 @@
+body {
+    background-color: #FFF8E7;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+.test {
+    align-content: space-between;
+}
+
+---------------------------------------------------------------------------------
+
+ul{
+    list-style-type: none;
+    
+}
+
+li{
+    margin-top: 5%;
+    list-style-type: none;
+    font-size: large;
+}
+
+.type_formats{
+    
+    border: 1px solid #8E8E8E ;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #8E8E8E;
+    text-align: center;
+    padding: 3% 12%;
+    font-size: 150%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.type_formats:hover, .type_formats:focus, .type_formats:active{
+    background-color: #36C8C8;
+    border: #36C8C8;
+}
+
+
+.button_left{
+    margin-left: 5%;
+}
+
+
+.button_right{
+    position: absolute;
+    right: 7%;
+  
+}
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+#features_buttons{
+    padding-top: 50px;
+}
+
+
+.quantity_button{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-top: 5%;
+}
+
+.add_button{
+    background-color: #62E412;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 150%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    right: 7%;
+    margin-top: 5%;
+}
+
+.add_button:hover, .add_button:focus, .add_button:active {
+    background-color: #F9A400;
+}
+
+table{
+    padding-top: 10%;
+}
