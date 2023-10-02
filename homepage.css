@@ -1,0 +1,27 @@
+body{
+    background-color: #fff8e7;
+}
+/*Header*/
+.homepage{
+    width: max-content;
+    height: 5rem;
+    
+}
+header{
+    font-size: 2rem;
+    height: 2vh;
+    width: max-content;
+    letter-spacing: 2px;
+
+}
+.img_header{
+    max-width: 40px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.txt_header{
+    font-size: 40px;
+    color: #3A3333;
+    font-family: url();
+}
