@@ -8,10 +8,25 @@ h2 {
     font-size: 300%;
 }
 
-.test {
-    align-content: space-between;
+-----------------------------------------Review------------------------------------
+
+.synopsis_content{
+    font-size: 200%;
 }
 
+
+.img_bookCover, .img_bookBackCover{
+    max-width: fit-content;
+    max-height: fit-content;
+    min-height: auto;
+    min-width: auto;
+}
+
+.stars {
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
 ---------------------------------------------------------------------------------
 
 ul{
@@ -47,12 +62,14 @@ li{
 
 .button_left{
     margin-left: 5%;
+    width: 40%;
 }
 
 
 .button_right{
     position: absolute;
     right: 7%;
+    width: 25%;
   
 }
 
@@ -90,5 +107,22 @@ li{
 }
 
 table{
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20%;
     padding-top: 10%;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+th, td{
+    border: 1px solid black;
+    padding-left: 2%;
 }
