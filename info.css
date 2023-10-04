@@ -1,16 +1,6 @@
-@import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
-@import url(https://fonts.google.com/specimen/Kaushan+Script);
-
-* {
-    scroll-behavior: smooth;
-
-}
-
-body {
-    background-color: #fff8e7;
-}
-
-/*Header*/
+------------------------------Header--------------------------------------------
+/*@import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
+@import url(https://fonts.google.com/specimen/Kaushan+Script);*/
 
 header {
     width: max-content;
@@ -52,8 +42,15 @@ header {
 }
 
 
+------------------------------------------------------------------------------------
+* {
+    scroll-behavior: smooth;
 
+}
 
+body {
+    background-color: #FFF8E7;
+}
 
 
 h2 {
@@ -65,7 +62,10 @@ h2 {
 
 .synopsis_content{
     font-size: 200%;
+    border: 1px solid black;
 }
+
+
 
 
 .img_bookCover, .img_bookBackCover{
@@ -84,18 +84,23 @@ h2 {
 
 ul{
     list-style-type: none;
-
+    
 }
 
-li {
+li{
     margin-top: 5%;
     list-style-type: none;
     font-size: large;
 }
 
-.type_formats {
+.title_formats{
+    font-size: 200%;
 
-    border: 1px solid #8E8E8E;
+}
+
+.type_formats{
+    
+    border: 1px solid #8E8E8E ;
     box-sizing: border-box;
     border-radius: 3px;
     background-color: #8E8E8E;
@@ -107,21 +112,19 @@ li {
 
 }
 
-.type_formats:hover,
-.type_formats:focus,
-.type_formats:active {
+.type_formats:hover, .type_formats:focus, .type_formats:active{
     background-color: #36C8C8;
     border: #36C8C8;
 }
 
 
-.button_left {
+.button_left{
     margin-left: 5%;
     width: 40%;
 }
 
 
-.button_right {
+.button_right{
     position: absolute;
     right: 7%;
     width: 25%;
@@ -132,20 +135,20 @@ li {
 
 
 
---------------------------------------------------------------------------------------------------------------- 
-#features_buttons {
+---------------------------------------------------------------------------------------------------------------
+#features_buttons{
     padding-top: 50px;
 }
 
 
-.quantity_button {
+.quantity_button{
     border: 2px solid black;
     border-radius: 3px;
     padding: 10px 20px;
     margin-top: 5%;
 }
 
-.add_button {
+.add_button{
     background-color: #62E412;
     border-radius: 3px;
     padding: 10px 20px;
@@ -157,9 +160,7 @@ li {
     margin-top: 5%;
 }
 
-.add_button:hover,
-.add_button:focus,
-.add_button:active {
+.add_button:hover, .add_button:focus, .add_button:active {
     background-color: #F9A400;
 }
 
@@ -171,6 +172,7 @@ table{
     padding-top: 10%;
     width: 90%;
     border-collapse: collapse;
+    
 }
 
 th{
@@ -182,4 +184,5 @@ th{
 th, td{
     border: 1px solid black;
     padding-left: 2%;
+    background-color: #EDF2F6;
 }
