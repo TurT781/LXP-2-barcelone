@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReadHub | Shopping cart</title>
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="./cart.css">
     <link rel="shortcut icon" href="src\logo.png" type="image/x-icon">
 
 </head>
@@ -26,8 +26,95 @@
         </nav>
     </header>
 
-    <h1 id="title">Your cart has products</h1>
+    <div id="title_h1" class="title_h1">
+        <h1>Your cart has products : </h1>
+    </div>
 
+
+    <div class="shopping-cart">
+
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="src\the_book_thief.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">The book thief</div>
+                <p class="product-description" style="margin-top: 20px;">Pocket Format <br> <br> A haunting tale of
+                    love, loss, and resilience during World War II, told through the eyes of Liesel Meminger, a young
+                    girl living in Nazi Germany who finds solace in the power of words and stories.</p>
+            </div>
+            <div class="product-price">12.99</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">25.98</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="src\fantastic_book.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Fantastic Beast</div>
+                <p class="product-description" style="margin-top: 20px;">Normal Format <br><br> A magical journey
+                    through the hidden world of
+                    extraordinary creatures, where wonder and enchantment await at every turn.</p>
+            </div>
+            <div class="product-price">8.99</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">8.99</div>
+        </div>
+
+        <div class="totals" style="font-family: Kaushan Script;">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">71.97</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">3.60</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">15.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">90.57</div>
+            </div>
+        </div>
+
+        <button class="payement">Payement</button>
+
+    </div>
+
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="./cart.js"></script>
+
+</body>
+
+</html>
 
 </body>
 
