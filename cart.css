@@ -20,10 +20,8 @@ body {
 /*Header*/
 
 header {
-    width: max-content;
+    width: 100%;
     height: 5rem;
-    flex-grow: 1;
-
 }
 
 .nav_header {
@@ -32,10 +30,10 @@ header {
 }
 
 .img_header {
-    max-width: 40px;
+    max-width: 5vh;
     height: auto;
     vertical-align: middle;
-    margin: 2.5rem;
+    margin: 2rem;
 }
 
 .logo_header {
@@ -45,9 +43,9 @@ header {
 
 .txt_header {
     padding: 3rem;
-    font-size: 40px;
+    font-size: 5vh;
     color: #3A3333;
-    letter-spacing: 2px;
+    letter-spacing: 0.25vh;
     text-align: center;
     transition: color 0.8s ease-in-out;
     text-decoration: none;
@@ -55,27 +53,27 @@ header {
 }
 
 .txt_header:hover {
-    color: #0e6db6;
-    font-weight: bold;
+    color: #36C8C8;
     transition: 0.8s ease-in-out;
+
 
 }
 
 /*Shopping cart*/
 
 .title_h1 {
-    height: 10vh;
-    width: max-content;
-    padding-left: 12vh;
-
+    text-align: center;
+    line-height: 10vh;
+    font-size: 3rem;
 }
+
 
 h1 {
     font-family: 'Kaushan Script';
     color: #3A3333;
-    font-size: 50px;
+    font-size: 6vh;
     text-decoration: underline;
-    padding-top: 15%;
+    padding-top: 10vh;
 }
 
 .product-image {
@@ -156,26 +154,20 @@ label {
 }
 
 .shopping-cart {
-    margin-top: 100px;
+    margin-top: 12.6vh;
 }
 
 
 .column-labels label {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 1.88vh;
+    margin-bottom: 1.88vh;
     border-bottom: 1px solid #eee;
-}
-
-.column-labels .product-image,
-.column-labels .product-details,
-.column-labels .product-removal {
-    text-indent: -9999px;
 }
 
 
 .product {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 2.51vh;
+    padding-bottom: 1.25vh;
     border-bottom: 1px solid #eee;
 }
 
@@ -184,32 +176,34 @@ label {
 }
 
 .product .product-image img {
-    width: 100px;
+    width: 12.6vh;
 }
 
 .product .product-details .product-title {
-    margin-right: 20px;
+    margin-right: 2.51vh;
     font-family: 'Kaushan Script';
+    font-size: 4vh;
+    text-decoration: underline;
 }
 
 .product .product-details .product-description {
-    margin: 5px 20px 5px 0;
+    margin: 0.62vh 2.51vh 0.62vh 0;
     line-height: 1.4em;
     font-family: 'Ibarra Real Nova';
 }
 
 .product .product-quantity input {
-    width: 40px;
+    width: 5.03vh;
 }
 
 .product .remove-product {
     border: 0;
-    padding: 4px 8px;
+    padding: 0.5vh 1vh;
     background-color: #c66;
     color: #fff;
     font-family: "Ibarra Real Nova";
-    font-size: 12px;
-    border-radius: 3px;
+    font-size: 1.21vh;
+    border-radius: 0.37vh;
 }
 
 .product .remove-product:hover {
@@ -221,7 +215,7 @@ label {
     float: right;
     clear: both;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1.26vh;
 }
 
 .totals .totals-item label {
@@ -245,11 +239,11 @@ label {
 .payement {
     float: right;
     border: 0;
-    margin-top: 20px;
-    padding: 6px 25px;
+    margin-top: 2.51vh;
+    padding: 0.75vh 3.14vh;
     background-color: #6b6;
     color: #fff;
-    font-size: 25px;
+    font-size: 3.14vh;
     border-radius: 10px;
     font-family: 'Kaushan Script';
 }
