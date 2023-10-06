@@ -184,6 +184,7 @@ label {
     font-family: 'Kaushan Script';
     font-size: 4vh;
     text-decoration: underline;
+    text-transform: capitalize;
 }
 
 .product .product-details .product-description {
