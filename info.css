@@ -1,16 +1,6 @@
+-----------------------------Header--------------------------------------------
 /*@import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
 @import url(https://fonts.google.com/specimen/Kaushan+Script);*/
-
-* {
-    scroll-behavior: smooth;
-
-}
-
-body {
-    background-color: #fff8e7;
-}
-
-/*Header*/
 
 header {
     width: max-content;
@@ -117,6 +107,7 @@ li{
     font-size: 150%;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    box-shadow: 2px 2px 2px #3A3333;
 
 }
 
@@ -166,6 +157,7 @@ li{
     position: absolute;
     right: 7%;
     margin-top: 5%;
+    box-shadow: 1px 1px 1px black;
 }
 
 .add_button:hover, .add_button:focus, .add_button:active {
@@ -180,6 +172,7 @@ table{
     padding-top: 10%;
     width: 90%;
     border-collapse: collapse;
+    
     
 }
 
