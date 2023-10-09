@@ -1,6 +1,7 @@
------------------------------Header--------------------------------------------
-/*@import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
-@import url(https://fonts.google.com/specimen/Kaushan+Script);*/
+@import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+------------------------------Header--------------------------------------------
 
 header {
     width: max-content;
@@ -50,12 +51,14 @@ header {
 
 body {
     background-color: #FFF8E7;
+    font-family: "Ibarra Real Nova";
 }
 
 
 h2 {
     text-align: center;
     font-size: 300%;
+    font-family: 'Kaushan Script'
 }
 
 -----------------------------------------Review------------------------------------
@@ -63,14 +66,19 @@ h2 {
 .synopsis_content{
     font-size: 200%;
     border: 1px solid black;
+
+}
+
+.synopsis{
+    margin-right: 20%;
 }
 
 
 .img_bookCover, .img_bookBackCover{
-    max-width: fit-content;
-    max-height: fit-content;
-    min-height: auto;
-    min-width: auto;
+    max-width: 30%;
+    max-height: 30%;
+    min-height: 30%;
+    min-width: 30%;
 }
 
 .stars {
@@ -105,13 +113,14 @@ li{
     text-align: center;
     padding: 3% 12%;
     font-size: 150%;
+    font-family: 'Kaushan Script';
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     box-shadow: 2px 2px 2px #3A3333;
 
 }
 
-.type_formats:hover, .type_formats:focus, .type_formats:active{
+.button_left:hover, .button_left:focus, .button_left:active{
     background-color: #36C8C8;
     border: #36C8C8;
 }
@@ -139,13 +148,22 @@ li{
     padding-top: 50px;
 }
 
-
-.quantity_button{
-    border: 2px solid black;
-    border-radius: 3px;
-    padding: 10px 20px;
-    margin-top: 5%;
+label{
+    display: block;
+    font-size: 150%;
+    margin-top: 10%;
+    margin-left: 5%;
 }
+
+input {
+  margin-left:5%;
+  margin-top: 3%;
+  height: 50px;
+  width: 150px;
+  font-size: 150%;
+  padding-left: 2%;
+}
+
 
 .add_button{
     background-color: #62E412;
