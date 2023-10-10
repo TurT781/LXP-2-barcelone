@@ -65,7 +65,7 @@ function recalculateCart() {
         $('.totals-value').fadeIn(fadeTime);
     });
 }
-
+// cal price after updt qtt 
 function updateQuantity(quantityInput) {
     var productRow = $(quantityInput).parent().parent();
     var price = parseFloat(productRow.children('.product-price').text());
@@ -95,12 +95,13 @@ function updateQuantity(quantityInput) {
     });
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 }
-
+// rm items from the cart and save it on the localStorage
 function removeItem(removeButton) {
     var productRow = $(removeButton).parent().parent();
     productRow.slideUp(fadeTime, function () {
         productRow.remove();
         recalculateCart();
+
         localStorage.setItem('cartData', JSON.stringify(cartData));
     });
 }
