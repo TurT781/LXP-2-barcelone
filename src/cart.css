@@ -1,0 +1,327 @@
+@import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff8e7;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0px 30px 30px 20px;
+  font-weight: 100;
+}
+
+/*Header*/
+
+header {
+  width: 100%;
+  height: 5rem;
+}
+
+.nav_header {
+  display: contents;
+}
+
+.img_header {
+  max-width: 5vh;
+  height: auto;
+  vertical-align: middle;
+  margin: 2rem;
+}
+
+.logo_header {
+  vertical-align: middle;
+}
+
+.txt_header {
+  padding: 3rem;
+  font-size: 5vh;
+  color: #3a3333;
+  letter-spacing: 0.25vh;
+  text-align: center;
+  transition: color 0.8s ease-in-out;
+  text-decoration: none;
+  font-family: "Ibarra Real Nova";
+}
+
+.txt_header:hover {
+  color: #36c8c8;
+  transition: 0.8s ease-in-out;
+}
+
+/*Shopping cart*/
+
+.title_h1 {
+  text-align: center;
+  line-height: 10vh;
+  font-size: 3rem;
+}
+
+h1 {
+  font-family: "Kaushan Script";
+  color: #3a3333;
+  font-size: 6vh;
+  text-decoration: underline;
+  padding-top: 10vh;
+}
+
+.product-image {
+  float: left;
+  width: 20%;
+}
+
+.product-details {
+  float: left;
+  width: 37%;
+}
+
+.product-price {
+  float: left;
+  width: 12%;
+}
+
+.product-quantity {
+  float: left;
+  width: 10%;
+}
+
+.product-removal {
+  float: left;
+  width: 9%;
+}
+
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+
+.group:before,
+.shopping-cart:before,
+.column-labels:before,
+.product:before,
+.totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  content: "";
+  display: table;
+}
+
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  clear: both;
+}
+
+.group,
+.shopping-cart,
+.column-labels,
+.product,
+.totals-item {
+  zoom: 1;
+}
+
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-value:before {
+  content: "$";
+}
+
+h1 {
+  font-weight: 100;
+}
+
+label {
+  color: #aaa;
+}
+
+.shopping-cart {
+  margin-top: 12.6vh;
+}
+
+.column-labels label {
+  padding-bottom: 1.88vh;
+  margin-bottom: 1.88vh;
+  border-bottom: 1px solid #eee;
+}
+
+.product {
+  margin-bottom: 2.51vh;
+  padding-bottom: 1.25vh;
+  border-bottom: 1px solid #eee;
+}
+
+.product .product-image {
+  text-align: center;
+}
+
+.product .product-image img {
+  width: 12.6vh;
+}
+
+.product .product-details .product-title {
+  margin-right: 2.51vh;
+  font-family: "Kaushan Script";
+  font-size: 4vh;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.product .product-details .product-description {
+  margin: 0.62vh 2.51vh 0.62vh 0;
+  line-height: 1.4em;
+  font-family: "Ibarra Real Nova";
+}
+
+.product .product-quantity input {
+  width: 5.03vh;
+}
+
+.product .remove-product {
+  border: 0;
+  padding: 0.5vh 1vh;
+  background-color: #c66;
+  color: #fff;
+  font-family: "Ibarra Real Nova";
+  font-size: 1.21vh;
+  border-radius: 0.37vh;
+}
+
+.product .remove-product:hover {
+  background-color: #a44;
+}
+
+/* Totals section */
+.totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 1.26vh;
+}
+
+.totals .totals-item label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+
+.totals .totals-item .totals-value {
+  float: right;
+  width: 21%;
+  text-align: right;
+  font-family: "Kaushan Script";
+}
+
+.totals .totals-item-total {
+  font-family: "Kaushan Script";
+}
+
+.payement {
+  float: right;
+  border: 0;
+  margin-top: 2.51vh;
+  padding: 0.75vh 3.14vh;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 3.14vh;
+  border-radius: 10px;
+  font-family: "Kaushan Script";
+}
+
+.payement:hover {
+  background-color: #494;
+  border-color: #0f0f0f0f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*size for tablet*/
+@media screen and (max-width: 650px) {
+  .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  .column-labels {
+    display: none;
+    font-family: "Ibarra Real Nova";
+  }
+
+  .product-image {
+    float: right;
+    width: auto;
+  }
+
+  .product-image img {
+    margin: 0 0 10px 10px;
+  }
+
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+
+  .product-quantity {
+    width: 100px;
+  }
+
+  .product-quantity input {
+    margin-left: 20px;
+  }
+
+  .product-quantity:before {
+    content: "x";
+  }
+
+  .product-removal {
+    width: auto;
+  }
+
+  .product-line-price {
+    float: right;
+    width: 70px;
+  }
+}
+
+/*size for phone*/
+@media screen and (max-width: 350px) {
+  .product-removal {
+    float: right;
+  }
+
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .product .product-line-price:before {
+    content: "Item Total: $";
+  }
+
+  .totals .totals-item label {
+    width: 60%;
+  }
+
+  .totals .totals-item .totals-value {
+    width: 40%;
+  }
+}

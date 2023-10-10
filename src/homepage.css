@@ -1,0 +1,121 @@
+@import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
+@import url(https://fonts.google.com/specimen/Kaushan+Script);
+
+*{
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #fff8e7;
+}
+
+/*Header*/
+
+header {
+    width: max-content;
+    height: 5rem;
+    flex-grow: 1;
+
+}
+.nav_header{
+    display: contents;
+
+}
+.img_header {
+    max-width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin: 2.5rem;
+}
+.logo_header{
+    vertical-align: middle;
+}
+
+.txt_header {
+    padding: 3rem;
+    font-size: 40px;
+    color: #3A3333;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: color 0.7s ease-in-out;
+    text-decoration: none;
+    font-family: 'Ibarra Real Nova';
+}
+.txt_header:hover {
+    color: #0e6db6; 
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ibarra real nova;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #FFF8E7;
+  display: flex;
+  align-items: center;
+}
+
+.sentence_haut{
+  position: relative;
+  float: initial;
+  margin-top: 100px;
+  width: 700px;
+  top: 20%;
+  padding: 30px;
+  float: left;
+}
+
+.txt_img{
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 60%;
+  left: 12%;
+}
+
+.background{
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  border: 3px solid #36C8C8;
+  border-radius: 5px;
+  padding: 10px;
+  float: right;
+}
+
+.hautp {
+  float: left;
+  width: 250px;
+  height: 153px; 
+  border-radius: 10px;
+}
+
+.cover{
+  width: 640px;
+  height: 600px;
+  margin-top: 400px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.livre{
+  height: 240px;
+  width: 150px;
+}
+
+.image{
+  float: left;
+  padding: 5px;
+}
+
+
