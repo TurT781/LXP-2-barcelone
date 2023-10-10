@@ -1,7 +1,7 @@
 @import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url(https://fonts.google.com/specimen/Kaushan+Script);
 
-------------------------------Header--------------------------------------------
+-----------------------------Header--------------------------------------------
 
 header {
     width: max-content;
@@ -66,25 +66,21 @@ h2 {
 .synopsis_content{
     font-size: 200%;
     border: 1px solid black;
-
-}
-
-.synopsis{
-    margin-right: 20%;
 }
 
 
 .img_bookCover, .img_bookBackCover{
-    max-width: 30%;
-    max-height: 30%;
-    min-height: 30%;
-    min-width: 30%;
+    width: 30%;
+    height: 30%;
 }
+
 
 .stars {
     padding-left: 5%;
     padding-top: 10%;
     padding-bottom: 10%;
+    height: 5%;
+    width: 5%;
 }
 ---------------------------------------------------------------------------------
 
@@ -154,16 +150,22 @@ label{
     margin-top: 10%;
     margin-left: 5%;
 }
-
-input {
-  margin-left:5%;
-  margin-top: 3%;
-  height: 50px;
-  width: 150px;
-  font-size: 150%;
-  padding-left: 2%;
+input{
+    margin-left: 5%;
+    margin-top: 3%;
+    height: 50px;
+    width: 150px;
+    font-size: 150%;
+    padding-left: 2%;
 }
 
+
+.quantity_button{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-top: 5%;
+}
 
 .add_button{
     background-color: #62E412;
