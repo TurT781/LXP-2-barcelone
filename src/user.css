@@ -1,56 +1,3 @@
-@import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
-@import url(https://fonts.google.com/specimen/Kaushan+Script);
-
-* {
-    scroll-behavior: smooth;
-
-}
-
-body {
-    background-color: #fff8e7;
-}
-
-/*Header*/
-
-header {
-    width: max-content;
-    height: 5rem;
-    flex-grow: 1;
-
-}
-
-.nav_header {
-    display: contents;
-
-}
-
-.img_header {
-    max-width: 40px;
-    height: auto;
-    vertical-align: middle;
-    margin: 2.5rem;
-}
-
-.logo_header {
-    vertical-align: middle;
-}
-
-.txt_header {
-    padding: 3rem;
-    font-size: 40px;
-    color: #fff;
-    letter-spacing: 2px;
-    text-align: center;
-    transition: color 0.7s ease-in-out;
-    text-decoration: none;
-    font-family: 'Ibarra Real Nova';
-}
-
-.txt_header:hover {
-    color: #0e6db6;
-
-}
-
 /* comming soon */
 @import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
@@ -127,3 +74,11 @@ p {
 }
 
 
+.homepage {
+    text-decoration: none;
+    color: wheat;
+}
+
+.homepage:hover {
+    color: white;
+}
