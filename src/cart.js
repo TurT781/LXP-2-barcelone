@@ -4,13 +4,6 @@ var fadeTime = 300;
 let idCounter = 1
 
 $(document).ready(function () {
-    // var cartData = JSON.parse(localStorage.getItem('cartData'));
-    // if (cartData) {
-    //     $('#cart-subtotal').html(cartData.subtotal);
-    //     $('#cart-tax').html(cartData.tax);
-    //     $('#cart-shipping').html(cartData.shipping);
-    //     $('#cart-total').html(cartData.total);
-    // }
 
     var cartItems = JSON.parse(localStorage.getItem('cartItems'));
     if (cartItems) {
@@ -31,6 +24,10 @@ $(document).ready(function () {
         removeItem(this);
     });
 });
+function CalTitle() {
+    var item = carItem[i];
+    document.getElementById(title_h1);
+}
 
 function recalculateCart() {
     var subtotal = 0;
@@ -65,7 +62,7 @@ function recalculateCart() {
         $('.totals-value').fadeIn(fadeTime);
     });
 }
-// cal price after updt qtt 
+// calc price after updt qtt 
 function updateQuantity(quantityInput) {
     var productRow = $(quantityInput).parent().parent();
     var price = parseFloat(productRow.children('.product-price').text());
@@ -100,21 +97,22 @@ function updateQuantity(quantityInput) {
 // rm items from the cart and save it on the localStorage
 function removeItem(removeButton) {
     var productRow = $(removeButton).parent().parent();
-
-
-    // step 1 get the id of the item clicked
-    // const id = 3
-    // step 2 get cartData as an array (just get from localStorage)
-    // step 3 look for the item in cartData that has that id, then delete it
-    // step 3 alternative ---- const newArr = arr.filter(element => element.id !== yourId)
-    // step 4 set cardData on localStorage again
-    //localStorage.setItem('cartData', JSON.stringify(newArr))
-
     productRow.slideUp(fadeTime, function () {
         productRow.remove();
         recalculateCart();
-        //console.log(cartData)
-    });
-}
 
+// get the cart from the localStorage
+        var cartItems = JSON.parse(localStorage.getItem('cartItems')); 
+        var productName = productRow.find('.product-title').text();
+
+        // delete product from the local
+        cartItems = cartItems.filter(function (item) {
+            return item.name !== productName;
+        });
+
+        // save the update to the localStorage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    });
+
+}
 
