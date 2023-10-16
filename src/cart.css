@@ -53,6 +53,7 @@ header {
   transition: 0.8s ease-in-out;
 }
 
+
 /*Shopping cart*/
 
 .title_h1 {
@@ -133,7 +134,7 @@ h1 {
 .product .product-price:before,
 .product .product-line-price:before,
 .totals-value:before {
-  content: "$";
+  content: "$ ";
 }
 
 h1 {
