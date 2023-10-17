@@ -1,25 +1,60 @@
 {
-  "products": [
-  { 
-    "id": 1,
-    "nom": "The book thief",
-    "prix": 8,
-    "categorie": "test",
-    "URL_image": "the_book-thief.png",
-    "synopsis" :"1939, Nazi Germany. The country is holding its breath. Death has never been busier.Liesel, a nine-year-old girl, is living with a foster family on Himmel Street. Her parents have been taken away to a concentration camp. Liesel steals books. This is her story and the story of the inhabitants of her street when the bombs begin to fall."
-  },
-
-    { 
-    "id": 2,
-    "nom": "The book thief",
-    "prix": 8,
-    "categorie": "test",
-    "URL_image": "the_book-thief.png",
-    "synopsis" :"1939, Nazi Germany. The country is holding its breath. Death has never been busier.Liesel, a nine-year-old girl, is living with a foster family on Himmel Street. Her parents have been taken away to a concentration camp. Liesel steals books. This is her story and the story of the inhabitants of her street when the bombs begin to fall."
-  
-     },
-    { "id": 3, "nom": "test", "prix": 15 }
-  ]
-
-
+    "image": [
+        {
+            "id": 1,
+            "img": "Read_Hub/Image/Livre_1",
+            "nom": "The Book Thief",
+            "prix": "9$",
+            "auteur": "Markus Zusak"
+        },
+        {
+            "id": 2,
+            "img": "Read_Hub/Image/Livre_2",
+            "nom": "The Open Amrs of the Sea",
+            "prix": "14$",
+            "auteur": "Kevin Andersson"
+        },
+        {
+            "id": 3,
+            "img": "Read_Hub/Image/Livre_3",
+            "nom": "The Mind of a Leader",
+            "prix": "4$",
+            "auteur": "Kevin Andersson"
+        },
+        {
+            "id": 4,
+            "img": "Read_Hub/Image/Livre_4",
+            "nom": "Percy Jackson: Le Sort du Titan",
+            "prix": "12$",
+            "auteur": "Rick Riordan"
+        },
+        {
+            "id": 5,
+            "img": "Read_Hub/Image/Livre_5",
+            "nom": "Ca",
+            "prix": "14$",
+            "auteur": "Stephan King"
+        },
+        {
+            "id": 6,
+            "img": "Read_Hub/Image/Livre_6",
+            "nom": "The Great Gatsby",
+            "prix": "6$",
+            "auteur": "F-Scott Fitzgerald"
+        },
+        {
+            "id": 7,
+            "img": "Read_Hub/Image/Livre_7",
+            "nom": "The Call of the Wild",
+            "prix": "13$",
+            "auteur": "Jack London"
+        },
+        {
+            "id": 8,
+            "img": "Read_Hub/Image/Livre_8",
+            "nom": "Alice au Pays des Merveilles",
+            "prix": "10$",
+            "auteur": "Benjamin Lacombe"
+        }
+    ]
 }
