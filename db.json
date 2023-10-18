@@ -1,60 +1,73 @@
 {
-    "image": [
-        {
-            "id": 1,
-            "img": "Read_Hub/Image/Livre_1",
-            "nom": "The Book Thief",
-            "prix": "9$",
-            "auteur": "Markus Zusak"
-        },
-        {
-            "id": 2,
-            "img": "Read_Hub/Image/Livre_2",
-            "nom": "The Open Amrs of the Sea",
-            "prix": "14$",
-            "auteur": "Kevin Andersson"
-        },
-        {
-            "id": 3,
-            "img": "Read_Hub/Image/Livre_3",
-            "nom": "The Mind of a Leader",
-            "prix": "4$",
-            "auteur": "Kevin Andersson"
-        },
-        {
-            "id": 4,
-            "img": "Read_Hub/Image/Livre_4",
-            "nom": "Percy Jackson: Le Sort du Titan",
-            "prix": "12$",
-            "auteur": "Rick Riordan"
-        },
-        {
-            "id": 5,
-            "img": "Read_Hub/Image/Livre_5",
-            "nom": "Ca",
-            "prix": "14$",
-            "auteur": "Stephan King"
-        },
-        {
-            "id": 6,
-            "img": "Read_Hub/Image/Livre_6",
-            "nom": "The Great Gatsby",
-            "prix": "6$",
-            "auteur": "F-Scott Fitzgerald"
-        },
-        {
-            "id": 7,
-            "img": "Read_Hub/Image/Livre_7",
-            "nom": "The Call of the Wild",
-            "prix": "13$",
-            "auteur": "Jack London"
-        },
-        {
-            "id": 8,
-            "img": "Read_Hub/Image/Livre_8",
-            "nom": "Alice au Pays des Merveilles",
-            "prix": "10$",
-            "auteur": "Benjamin Lacombe"
-        }
-    ]
+  "article": [
+  {
+      "id": 1,
+      "img": "Read_Hub/Image/Livre_1",
+      "name": "The Book Thief",
+      "price": "9$",
+      "authors": "Markus Zusak",
+      "categorie": "Suspense",
+      "synopsis" : "synopsis",
+      "languageStandard" : "English/Spanish",
+      "languagePocket" : "English/Spanish",
+      "languageAudio" : "All",
+      "pagesStandard" :"352",
+      "pagesPocket" :"234",
+      "pagesAudio" :"846 min",
+      "DimensionStandard" :"16cm 11cm 8cm",
+      "DimensionPocket":"12cm 8cm 5cm",
+      "DimensionAudio": "13.8 Mo",
+      "editor": "James Lopez"
+
+  },
+  {
+      "id": 2,
+      "img": "Read_Hub/Image/Livre_2",
+      "name": "The Open Amrs of the Sea",
+      "price": "14$",
+      "authors": "Kevin Andersson"
+  },
+  {
+      "id": 3,
+      "img": "Read_Hub/Image/Livre_3",
+      "name": "The Mind of a Leader",
+      "price": "4$",
+      "authors": "Kevin Andersson"
+  },
+  {
+      "id": 4,
+      "img": "Read_Hub/Image/Livre_4",
+      "name": "Percy Jackson: Le Sort du Titan",
+      "price": "12$",
+      "authors": "Rick Riordan"
+  },
+  {
+      "id": 5,
+      "img": "Read_Hub/Image/Livre_5",
+      "name": "Ca",
+      "price": "14$",
+      "authors": "Stephan King"
+  },
+  {
+      "id": 6,
+      "img": "Read_Hub/Image/Livre_6",
+      "name": "The Great Gatsby",
+      "price": "6$",
+      "authors": "F-Scott Fitzgerald"
+  },
+  {
+      "id": 7,
+      "img": "Read_Hub/Image/Livre_7",
+      "name": "The Call of the Wild",
+      "price": "13$",
+      "authors": "Jack London"
+  },
+  {
+      "id": 8,
+      "img": "Read_Hub/Image/Livre_8",
+      "name": "Alice au Pays des Merveilles",
+      "price": "10$",
+      "authors": "Benjamin Lacombe"
+  }
+  ]
 }
