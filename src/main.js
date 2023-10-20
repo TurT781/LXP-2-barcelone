@@ -140,7 +140,7 @@ for (const pr of products) {
     if (btn) btn.addEventListener("click", function () {
         //change total price
         cart.rows = cart.rows.filter(x => x.id !== prod.id);
-        console.log(cart.rows);
+        
         let products = JSON.parse(localStorage.getItem("cart")) || [];
         let divProducts = document.getElementById("products");
         let cart = new Cart();
@@ -185,7 +185,7 @@ for (const pr of products) {
                     total.innerText = r.totalPrice.toFixed(2);
                     // Update the local storage
                     localStorage.setItem("cart", JSON.stringify(cart.rows));
-                    console.log(cart.rows);
+
                 });
             }
 
