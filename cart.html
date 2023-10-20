@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReadHub | Shopping cart</title>
-    <link rel="stylesheet" href="src/cart.css">
+    <link rel="stylesheet" type="text/css" href="./src/cart.css">
     <link rel="shortcut icon" href="asset\logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <nav class="anchor">
             <a href="#"><img src="asset\logo-removebg-preview.png" alt="logo_bg_rm" class="logo_header"></a>
             <nav class="nav_header">
-                <a href="homepage.html" class="txt_header">Home</a>
+                <a href="home.html" class="txt_header">Home</a>
                 <a href="features.html" class="txt_header">Features</a>
                 <a href="support.html" class="txt_header">Support</a>
                 <a href="blog.html" class="txt_header">Blog</a>
@@ -43,22 +45,25 @@
 
 
 
+        <div id="products">
+
+        </div>
         <div class="totals" style="font-family: Kaushan Script;">
             <div class="totals-item">
                 <label>Subtotal</label>
-                <div class="totals-value" id="cart-subtotal"></div>
+                <div class="totals-value" id="cart-subtotal">37.97</div>
             </div>
             <div class="totals-item">
                 <label>Tax (5%)</label>
-                <div class="totals-value" id="cart-tax"></div>
+                <div class="totals-value" id="cart-tax">1.89</div>
             </div>
             <div class="totals-item">
                 <label>Shipping</label>
-                <div class="totals-value" id="cart-shipping"></div>
+                <div class="totals-value" id="cart-shipping">10.00</div>
             </div>
             <div class="totals-item totals-item-total">
                 <label>Grand Total</label>
-                <div class="totals-value" id="cart-total"></div>
+                <div class="totals-value" id="cart-total">49.86</div>
             </div>
         </div>
 
@@ -66,8 +71,7 @@
 
     </div>
 
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="src/cart2.js"></script>
+    <script type="module" src="./src/main.js"></script>
 
 
 </body>
