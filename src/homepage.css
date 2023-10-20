@@ -1,57 +1,53 @@
 @import url(https://fonts.google.com/specimen/Ibarra+Real+Nova?query=+Ibarra+Real+Nova+);
 @import url(https://fonts.google.com/specimen/Kaushan+Script);
 
-*{
-    scroll-behavior: smooth;
-
-}
-
-body {
-    background-color: #fff8e7;
-}
-
 /*Header*/
 
 header {
-    width: max-content;
-    height: 5rem;
-    flex-grow: 1;
+  width: max-content;
+  height: 5rem;
+  flex-grow: 1;
 
 }
-.nav_header{
-    display: contents;
+
+.nav_header {
+  display: contents;
 
 }
+
 .img_header {
-    max-width: 40px;
-    height: auto;
-    vertical-align: middle;
-    margin: 2.5rem;
+  max-width: 40px;
+  height: auto;
+  vertical-align: middle;
+  margin: 2.5rem;
 }
-.logo_header{
-    vertical-align: middle;
+
+.logo_header {
+  vertical-align: middle;
 }
 
 .txt_header {
-    padding: 3rem;
-    font-size: 40px;
-    color: #3A3333;
-    letter-spacing: 2px;
-    text-align: center;
-    transition: color 0.7s ease-in-out;
-    text-decoration: none;
-    font-family: 'Ibarra Real Nova';
+  padding: 3rem;
+  font-size: 40px;
+  color: #3A3333;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: color 0.7s ease-in-out;
+  text-decoration: none;
+  font-family: 'Ibarra Real Nova';
 }
+
 .txt_header:hover {
-    color: #0e6db6; 
-  
+  color: #0e6db6;
+
 }
 
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'ibarra real nova';
+  font-family: ibarra real nova;
   list-style: none;
 }
 
@@ -60,12 +56,12 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #FFF8E7;
+  background-color: #fff8e7 !important;
   display: flex;
   align-items: center;
 }
 
-.sentence_haut{
+.sentence_haut {
   position: relative;
   float: initial;
   margin-top: 100px;
@@ -75,7 +71,7 @@ body {
   float: left;
 }
 
-.txt_img{
+.txt_img {
   position: absolute;
   color: white;
   text-align: center;
@@ -83,7 +79,7 @@ body {
   left: 12%;
 }
 
-.background{
+.background {
   width: 300px;
   height: 150px;
   text-align: center;
@@ -96,26 +92,18 @@ body {
 .hautp {
   float: left;
   width: 250px;
-  height: 153px; 
+  height: 153px;
   border-radius: 10px;
 }
 
-.cover{
-  width: 640px;
-  height: 600px;
-  margin-top: 400px;
-  text-align: center;
-  margin-top: 80px;
-}
 
-.livre{
+.livre {
   height: 240px;
   width: 150px;
 }
-
-.image{
-  float: left;
-  padding: 5px;
+h6{
+ font-family: 'Ibarra Real Nova'!important;
 }
-
-
+h5{
+  font-family: 'Kaushan Script' !important;
+}
