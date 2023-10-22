@@ -140,7 +140,7 @@ for (const pr of products) {
     if (btn) btn.addEventListener("click", function () {
         //change total price
         cart.rows = cart.rows.filter(x => x.id !== prod.id);
-        
+
         let products = JSON.parse(localStorage.getItem("cart")) || [];
         let divProducts = document.getElementById("products");
         let cart = new Cart();
@@ -193,21 +193,45 @@ for (const pr of products) {
             if (btn) btn.addEventListener("click", function () {
                 // Find the index of the product to remove in the cart
                 const productIndex = cart.rows.findIndex((row) => row.id === prod.id);
-            
+
                 if (productIndex !== -1) {
                     // Remove the product from the cart
                     cart.rows.splice(productIndex, 1);
-            
+
                     // Update the local storage with the updated cart
                     localStorage.setItem("cart", JSON.stringify(cart.rows));
-            
+
                     // Remove the product's HTML element from the page
                     row.remove();
                 }
             });
+
 
         }
 
     });
 
 }
+const buttonCheckout = document.getElementById("checkout")
+buttonCheckout.addEventListener("click", function () {
+    function calculateAmount() {
+        let amount = 0;
+        for (const row of cart.rows) {
+            amount += row.totalPrice;
+        }
+        return amount;
+    }
+
+    // Créer une promesse pour le calcul du montant
+    const calculateAmountPromise = new Promise((resolve) => {
+        resolve(calculateAmount());
+    });
+
+    // Une fois que le montant est calculé, construire l'URL et ouvrir la nouvelle fenêtre
+    calculateAmountPromise.then((amount) => {
+        const url = `checkout.html?amount=${amount}`;
+        console.log(url);
+        const popup = window.open(url, "Checkout", "width=800,height=600");
+   
+    });
+})
