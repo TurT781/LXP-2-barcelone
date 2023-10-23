@@ -12,3 +12,8 @@ The reason is it might be annoying to looking for a book written by someone who 
 ## The others informations 
 Check on Github all the folders / files.
 There is the PDF file on the drive (shared with students)
+
+## Run the server
+Open your terminal javaScript debuger and type :
+npm run start 
+The server should start on the port 3000 
