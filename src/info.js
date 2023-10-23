@@ -1,57 +1,52 @@
-/*
-fetch("http://localhost:3000/products")
-.then((response)=> response.json())
-.then((data)=> console.log(data))
-.catch((error) => console.error("Error:", error));
-
-
-const reponse = await fetch("http://localhost:3000/products");
-const book = await reponse.json();
-
-const article = book[0];
-const nomElement = document.createElement("h2");
-nameElement.innerText = article.name;
-const imageElement = document.createElement("img");
-imageElement.src = article.URL_image;
-const synopsisElement = document.createElement("p");
-synopsisElement.innerText = article.synopsis;
-const categoryElement = document.createElement("p");
-categoryElement.innerText = article.category;
-const priceElement = document.createElement("p");
-priceElement.innerText = `price: ${article.price} €`;
-
-
-const productContainer = document.createElement("div");
-productContainer.appendChild(imageElement);
-productContainer.appendChild(nameElement);
-productContainer.appendChild(priceElement);
-productContainer.appendChild(categoryElement);
-productContainer.appendChild(synopsisElement)
-
-const sectionFiches = document.getElementById("fiches");
-sectionFiches.appendChild(productContainer);
-*/
-
 const urlParams = new URLSearchParams(window.location.search);
 const wantedId = urlParams.get("id");
+
+import { ProductService } from "../src/productService.js";
+const productService = new ProductService();
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch("http://localhost:3000/article/" + wantedId)
     .then((response) => response.json())
-    .then((data) => console.log(data))
-    .then(function(data) {
+    .then((product) => console.log(product))
+    .then(function(product) {
       const nameElement = document.createElement("h2");
-      nameElement.innerText = data.name;
+      nameElement.innerText = product.name;
+
       const authorsElement = document.createElement("h2");
-      authorsElement.innerText = data.authors;
+      authorsElement.innerText = product.authors;
+
       const imageElement = document.createElement("img");
-      imageElement.src = data.img;
+      imageElement.src = product.img;
+
       const synopsisElement = document.createElement("p");
-      synopsisElement.innerText = data.synopsis;
+      synopsisElement.innerText = product.synopsis;
+      synopsisElement.style.maxWidth = "40%";
+      synopsisElement.style.fontSize = "100%"
+
       const categoryElement = document.createElement("p");
-      categoryElement.innerText = data.category;
-      const priceElement = document.createElement("p");
-      priceElement.innerText = `price: ${data.price} €`;
+      categoryElement.innerText = product.category;
+
+      const priceElement = document.createElement("button");
+      priceElement.innerText = `price: ${product.price} €`;
+      priceElement.classList = "type_formats button-right"
+
+      var featuresButtonsDiv = document.createElement('div');
+      featuresButtonsDiv.id = 'features_buttons';
+      var label = document.createElement('label');
+      label.setAttribute('for', 'copies');
+      label.textContent = 'Quantity :';
+      var input = document.createElement('input');
+      input.type = 'number';
+      input.id = 'quantity_button';
+      input.name = 'copies';
+      input.min = '1';
+      input.max = '9';
+      var quantityButtonA = document.createElement('a');
+      quantityButtonA.className = 'quantity_button';
+      quantityButtonA.textContent = 'Quantity :';
+      featuresButtonsDiv.appendChild(label);
+      featuresButtonsDiv.appendChild(input);
+      featuresButtonsDiv.appendChild(quantityButtonA);
 
       const productContainer = document.createElement("div");
       productContainer.appendChild(nomElement);
@@ -60,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       productContainer.appendChild(categoryElement);
       productContainer.appendChild(synopsisElement);
       productContainer.appendChild(priceElement);
+      productContainer.appendChild(featuresButtonsDiv);
 
 
       const sectionFiches = document.getElementById("fiches");
@@ -67,8 +63,3 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
      });
-
-
-
-
-//localStorage.setItem("bookName", "The book thief")
