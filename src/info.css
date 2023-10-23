@@ -57,7 +57,16 @@ body {
 
 h2 {
     text-align: center;
+    padding-top: 15%;
+    padding-bottom: 5%;
     font-size: 300%;
+    font-family: 'Kaushan Script'
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 10%;
+    font-size: 200%;
     font-family: 'Kaushan Script'
 }
 
@@ -66,15 +75,17 @@ h2 {
 #fiches{
     border: 5px solid red;
 }
-.synopsis_content{
-    font-size: 200%;
-    border: 1px solid black;
+
+.test{
+    padding-right: 10%;
+    font-size: 100%;
 }
 
 
 .img_bookCover, .img_bookBackCover{
-    width: 30%;
-    height: 30%;
+    padding-left: 10%;
+    width: 35%;
+    height: 35%;
 }
 
 
