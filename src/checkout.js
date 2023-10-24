@@ -9,14 +9,14 @@ const currentURL = window.location.href;
 // Analysez l'URL pour obtenir les paramètres
 const urlParams = new URLSearchParams(currentURL);
 
-// Récupérez la valeur du paramètre "amount"
-const amount = currentURL.split("=")[1];
+// Récupérez la valeur du paramètre "cartTotal"
+const cartTotal = currentURL.split("=")[1];
 
-if (amount) {
+if (cartTotal) {
     // Utilisez le montant comme bon vous semble
-    console.log(`Montant récupéré : ${amount}`);
+    console.log(`Montant récupéré : ${cartTotal}`);
 } else {
-    console.log("Paramètre 'amount' non trouvé dans l'URL.");
+    console.log("Paramètre 'cartTotal' non trouvé dans l'URL.");
 }
 
 let elements;
@@ -32,10 +32,10 @@ let emailAddress = '';
 // Fetches a payment intent and captures the client secret
 async function initialize() {
     try {
-        const response = await fetch("http://127.0.0.1:3000/create-payment-intent", {
+        const response = await fetch("http://127.0.0.1:4242/create-payment-intent", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: amount,
+            body: cartTotal,
         });
         const { clientSecret } = await response.json();
 
@@ -58,7 +58,7 @@ async function initialize() {
         const paymentElement = elements.create("payment", paymentElementOptions);
         paymentElement.mount("#payment-element");
     } catch (error) {
-        console.log(error);
+
     }
 }
 async function handleSubmit(e) {
@@ -69,7 +69,7 @@ async function handleSubmit(e) {
         elements,
         confirmParams: {
             // Make sure to change this to your payment completion page
-            return_url: "http://localhost:4242/checkout.html",
+            return_url: "http://127.0.0.1:3000/checkout.html",
             receipt_email: emailAddress,
         },
     });

@@ -8,7 +8,7 @@
 //   npm install stripe
 //   npm install express
 //
-// 3) Run the server on http://localhost:4242
+// 3) Run the server on "http://localhost:4242"
 //   node server.js
 
 // The library needs to be configured with your account's secret key.
@@ -50,14 +50,13 @@ app.post("/create-payment-intent", async (req, res) => {
       clientSecret: paymentIntent.client_secret,
     });
   } catch (error) {
-    console.log("error" , error);
+    console.log("error", error);
     res.send(error)
   }
 });
 app.get("/api", async (req, res) => {
 
-  console.log("blipp");
-  res.send("helloWord");
+
 });
 app.post('/webhook', express.raw({ type: 'application/json' }), (request, response) => {
   const sig = request.headers['stripe-signature'];

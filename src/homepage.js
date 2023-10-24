@@ -36,7 +36,6 @@ productService.getApi().then((products) => {
             btn.classList.add("btn-primary")
         }
         btn.addEventListener("click", function () {
-            console.log(product);
 
             // making the localStorage
             const cart = JSON.parse(localStorage.getItem("cart")) || [];

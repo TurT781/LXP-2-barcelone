@@ -47,7 +47,7 @@ header {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: ibarra real nova;
+  font-family: 'ibarra real nova';
   list-style: none;
 }
 
@@ -73,10 +73,10 @@ body {
 
 .txt_img {
   position: absolute;
+  top: 50%;
+  margin-left: 2rem;
   color: white;
-  text-align: center;
-  top: 60%;
-  left: 12%;
+  font-family: 'Kaushan Script';
 }
 
 .background {
@@ -101,9 +101,11 @@ body {
   height: 240px;
   width: 150px;
 }
-h6{
- font-family: 'Ibarra Real Nova'!important;
+
+h6 {
+  font-family: 'Ibarra Real Nova' !important;
 }
-h5{
+
+h5 {
   font-family: 'Kaushan Script' !important;
 }

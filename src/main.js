@@ -51,20 +51,6 @@ class Row {
         this.quantity = 1;
         this.id = product.id;
     }
-
-    // add product
-    // addProduct(product) {
-    //     this.quantity = this.quantity + 1
-    //     // this.totalPrice = product.price * this.quantity
-    //     return product
-    // }
-
-    removeProduct() {
-        if (this.quantity > 0) {
-            this.quantity--
-            this.totalPrice = this.product.price
-        }
-    }
 }
 
 class Cart {
@@ -117,8 +103,7 @@ for (const pr of products) {
             console.log(cart.rows);
         });
     }
-    // let quantity = document.getElementById("quantity_" + prod.id);
-    // let total = document.getElementById("total_" + prod.id);
+
 
     if (quantity) {
         quantity.value = r.quantity; // Mettez à jour la valeur du champ de quantité
@@ -145,8 +130,6 @@ for (const pr of products) {
         let divProducts = document.getElementById("products");
         let cart = new Cart();
 
-        console.log(products);
-
         for (const pr of products) {
             // Create a new instance of the Product class
             const prod = new Product(pr.id, pr.title, pr.price, pr.image, pr.description);
@@ -154,6 +137,16 @@ for (const pr of products) {
             let row = document.createElement("div");
             const is_prod_exist = cart.rows.find((produit) => produit.id == prod.id)
             let r
+            // Supprimer le produit du panier
+            cart.rows = cart.rows.filter(x => x.id !== prod.id);
+
+            // Mettre à jour l'affichage du panier
+            updateCartSubtotal();
+            updateCartTax();
+            updateCartTotal();
+
+            // Mettre à jour le stockage local
+            localStorage.setItem("cart", JSON.stringify(cart.rows));
 
             if (!is_prod_exist) {
                 r = new Row(prod);
@@ -189,29 +182,69 @@ for (const pr of products) {
                 });
             }
 
-            let btn = document.getElementById("btn_" + prod.id);
-            if (btn) btn.addEventListener("click", function () {
-                // Find the index of the product to remove in the cart
-                const productIndex = cart.rows.findIndex((row) => row.id === prod.id);
+            //-----//-----//-----//-----//-----//-----//-----//-----//-----//-----
 
-                if (productIndex !== -1) {
-                    // Remove the product from the cart
-                    cart.rows.splice(productIndex, 1);
-
-                    // Update the local storage with the updated cart
-                    localStorage.setItem("cart", JSON.stringify(cart.rows));
-
-                    // Remove the product's HTML element from the page
-                    row.remove();
-                }
-            });
-
+            //-----//-----//-----//-----//-----//-----//-----//-----//-----//-----
 
         }
 
     });
 
 }
+const updateCartSubtotal = () => {
+    const cartSubtotal = document.getElementById("cart-subtotal");
+
+    // Calculate the subtotal
+    let subtotal = 0;
+    for (const row of cart.rows) {
+        subtotal += row.totalPrice;
+    }
+    console.log(subtotal);
+
+    // Update the subtotal in the HTML
+    cartSubtotal.textContent = subtotal.toFixed(2);
+};
+//  À l'initialisation de la page, mettez à jour les taxes
+
+const updateCartTax = () => {
+    const cartTax = document.getElementById("cart-tax");
+
+    // Calculate the tax (5% of the subtotal)
+    let subtotal = 0;
+    for (const row of cart.rows) {
+        subtotal += row.totalPrice;
+    }
+
+    const tax = 0.05 * subtotal; // Calculate the tax (5%)
+    // Update the tax in the HTML
+    cartTax.textContent = tax.toFixed(2);
+
+};
+const updateCartTotal = () => {
+    const cartTotal = document.getElementById("cart-total");
+
+    // Calculate the subtotal
+    let subtotal = 0;
+    for (const row of cart.rows) {
+        subtotal += row.totalPrice;
+    }
+
+    const tax = 0.05 * subtotal; // Calculate the tax (5%)
+    const shipping = 10; // Shipping cost
+
+    const total = subtotal + tax + shipping; // Calculate the total
+
+    // Update the total in the HTML
+    cartTotal.textContent = total.toFixed(2);
+};
+
+
+window.addEventListener("load", () => {
+    updateCartSubtotal();
+    updateCartTax();
+    updateCartTotal();
+})
+
 const buttonCheckout = document.getElementById("checkout")
 buttonCheckout.addEventListener("click", function () {
     function calculateAmount() {
@@ -231,7 +264,11 @@ buttonCheckout.addEventListener("click", function () {
     calculateAmountPromise.then((amount) => {
         const url = `checkout.html?amount=${amount}`;
         console.log(url);
-        const popup = window.open(url, "Checkout", "width=800,height=600");
-   
+        const popup = window.open(url, "Checkout");
     });
+
 })
+loadProductsFromLocalStorage();
+updateCartSubtotal();
+updateCartTax();
+updateCartTotal();
